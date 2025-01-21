@@ -70,7 +70,7 @@ const SentInvoices = (props) => {
                   </tr>
                 ))}
                 <tr className="bg-blue-400 text-black font-bold">
-                  <td colSpan="4">Total</td>
+                  <td className="text-center" colSpan="4">Total</td>
                   <td className="p-2 border border-gray-200 text-center">${calculateTotAmt()}</td>
                   <td className="p-2 border border-gray-200 text-center">${calculateTotGST()}</td>
                 </tr>
