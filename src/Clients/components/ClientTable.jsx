@@ -42,7 +42,7 @@ const ClientTable = (props) => {
                                         <td className="p-2 border border-gray-200 text-center">
                                             <button 
                                                 onClick={() => handleDelete(client.id)}
-                                                className="border rounded-lg p-1 hover:scale-105 hover:bg-violet-300 duration-200 transition-all"
+                                                className="border bg-red-300 text-neutral-800 rounded-lg p-1 hover:scale-105 hover:bg-red-600 duration-200 transition-all"
                                             >
                                                 Delete
                                             </button>

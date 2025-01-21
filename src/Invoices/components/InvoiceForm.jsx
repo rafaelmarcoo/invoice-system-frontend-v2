@@ -228,6 +228,7 @@ const InvoiceForm = () => {
                                 onChange={handleChange}
                                 value={formData.DateDue}
                                 className="p-1 border border-neutral-500 rounded-lg text-blue-400 focus:border-4 focus:outline-none focus:outline-offset-4 transition-all ml-3"
+                                required
                             />
                         </div>
                         <label className="text-center text-2xl border-t pt-3">Items</label>
