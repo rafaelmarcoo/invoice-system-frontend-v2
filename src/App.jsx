@@ -5,6 +5,7 @@ import EditCompanyPage from "./EditCompany/EditCompanyPage";
 import ClientsPage from "./Clients/ClientsPage";
 import InvoicesPage from "./Invoices/InvoicesPage";
 import GSTPage from "./GST/GSTPage";
+import AssetsPage from "./Assets/AssetsPage";
 
 function App() {
  return (
@@ -27,6 +28,10 @@ function App() {
         <Route 
           path="/gst"
           element={<GSTPage />}
+        />
+        <Route 
+          path="/asset"
+          element={<AssetsPage />}
         />
       </Routes>
       </Router>
