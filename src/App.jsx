@@ -1,9 +1,20 @@
+import React from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import EditCompanyPage from "./EditCompany/EditCompanyPage";
 
 function App() {
  return (
-  <div>
-    <h1>Hello World!</h1>
-  </div>
+    <div className="mt-20">
+      <Router>
+
+      <Routes>
+        <Route 
+          path="/"
+          element={<EditCompanyPage />}
+        />
+      </Routes>
+      </Router>
+    </div>
  )
 }
 
