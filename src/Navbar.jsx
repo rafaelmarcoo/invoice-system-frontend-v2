@@ -39,7 +39,7 @@ const Navbar = () => {
                         <Link 
                             key={index} 
                             to={item.href}
-                            className="hover:text-blue-300 transition-colors duration-200"
+                            className="border bg-gray-600 rounded-lg p-1 hover:scale-105 hover:bg-blue-300 duration-200 transition-all"
                             onClick={toggleMenuBar}
                         >
                             {item.title}

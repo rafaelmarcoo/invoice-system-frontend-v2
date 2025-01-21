@@ -1,5 +1,3 @@
-
-
 const ClientTable = (props) => {
     const handleDelete = async (deleteId) => {
         await props.deleteClient(deleteId);

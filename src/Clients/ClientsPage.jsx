@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import ClientTable from "./components/ClientTable";
+import AddClient from "./components/AddClient";
+import EditClient from "./components/EditClient";
 
 const ClientsPage = () => {
-    const [active, setActive] = useState("client-form");
-    const toggle = (text) => {
+    const [active, setActive] = useState("add");
+    const toggleComponent = (text) => {
         setActive(text);
     }
 
@@ -77,6 +79,27 @@ const ClientsPage = () => {
                 clients={clients}
                 deleteClient={deleteClient}
             />
+            <div className="mt-10 flex flex-shrink-0 justify-center space-x-10">
+                <button 
+                    className="border bg-gray-600 rounded-lg p-1 hover:scale-105 hover:bg-blue-300 duration-200 transition-all"
+                    onClick={() => toggleComponent("add")}
+                >
+                    Add Client
+                </button>
+                <button 
+                    className="border bg-gray-600 rounded-lg p-1 hover:scale-105 hover:bg-blue-300 duration-200 transition-all"
+                    onClick={() => toggleComponent("edit")}
+                >
+                    Edit Client
+                </button>
+            </div>
+            {active === "add" && <AddClient 
+                                    addClient={addClient}
+                                />}
+            {active === "edit" && <EditClient 
+                                    clients={clients}
+                                    editClient={editClient}
+                                />}
         </div>
     )
 }
