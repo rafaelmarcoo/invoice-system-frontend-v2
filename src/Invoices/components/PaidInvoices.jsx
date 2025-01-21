@@ -53,7 +53,7 @@ const PaidInvoices = (props) => {
                       <td className="p-2 border border-gray-200 text-center flex flex-col space-y-2">
                       <button 
                         onClick={() => props.handleViewFile(invoice.filePath)}
-                        className="border rounded-lg p-1 hover:scale-105 hover:bg-violet-300 duration-200 transition-all"
+                        className="border rounded-lg p-1 hover:scale-105 hover:bg-green-300 duration-200 transition-all"
                       >
                         View Invoice</button>
                       </td>
@@ -70,7 +70,7 @@ const PaidInvoices = (props) => {
           ))
         ) : (
           <div>
-              <h2 className="mt-10">No Clients</h2>
+              <h2 className="mt-10">No Paid Invoices</h2>
           </div>
         )}
       </div>
