@@ -79,7 +79,7 @@ const SentInvoices = (props) => {
           </div>
         ) : (
           <div>
-              <h2 className="mt-10">No Sent Invoices</h2>
+              <h2 className="mt-10 text-center">No Sent Invoices</h2>
           </div>
         )}
       </div>

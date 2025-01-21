@@ -81,7 +81,7 @@ const OverdueInvoices = (props) => {
           </div>
         ) : (
           <div>
-              <h2 className="mt-10">No Overdue Invoices</h2>
+              <h2 className="mt-10 text-center">No Overdue Invoices</h2>
           </div>
         )}
       </div>

@@ -54,7 +54,7 @@ const ClientTable = (props) => {
                     </div>
                 ) : (
                     <div>
-                        <h2 className="mt-10">No Clients</h2>
+                        <h2 className="mt-10 text-center">No Clients</h2>
                     </div>
                 )}
             </div>

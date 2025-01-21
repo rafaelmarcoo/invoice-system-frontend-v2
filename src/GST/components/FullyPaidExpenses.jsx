@@ -54,7 +54,7 @@ const FullyPaidExpenses = (props) => {
                     </div>
                 ) : (
                     <div>
-                        <h2 className="mt-10">No Fully Paid Expenses</h2>
+                        <h2 className="mt-10 text-center">No Fully Paid Expenses</h2>
                     </div>
                 )}
             </div>

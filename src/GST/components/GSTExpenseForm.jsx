@@ -1,6 +1,6 @@
 import { useRef, useState } from "react"
 
-const GSTExpenseForm = () => {
+const GSTExpenseForm = (props) => {
     const [formData, setFormData] = useState({
         Title: "",
         Description: "",

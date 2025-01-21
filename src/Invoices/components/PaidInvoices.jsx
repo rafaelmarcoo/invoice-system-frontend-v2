@@ -70,7 +70,7 @@ const PaidInvoices = (props) => {
           ))
         ) : (
           <div>
-              <h2 className="mt-10">No Paid Invoices</h2>
+              <h2 className="mt-10 text-center">No Paid Invoices</h2>
           </div>
         )}
       </div>
