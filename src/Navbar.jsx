@@ -34,7 +34,7 @@ const Navbar = () => {
                     </button>
                 </div>
                 {menuBar && (
-                    <div className="fixed top-[88px] left-0 right-0 lg:hidden w-full p-12 flex flex-col justify-center items-center bg-neutral-950/50 space-y-6">
+                    <div className="fixed top-[88px] left-0 right-0 lg:hidden w-full p-12 flex flex-col justify-center items-center bg-neutral-900 space-y-6">
                         {navItems.map((item, index) => (
                         <Link 
                             key={index} 

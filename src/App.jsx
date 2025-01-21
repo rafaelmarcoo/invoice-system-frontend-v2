@@ -7,6 +7,7 @@ import InvoicesPage from "./Invoices/InvoicesPage";
 import GSTPage from "./GST/GSTPage";
 import AssetsPage from "./Assets/AssetsPage";
 import TaxSummaryPage from "./TaxSummary/TaxSummaryPage";
+import Footer from "./Footer";
 
 function App() {
  return (
@@ -39,6 +40,7 @@ function App() {
             element={<TaxSummaryPage />}
           />
         </Routes>
+        <Footer />
       </Router>
     </div>
  )
