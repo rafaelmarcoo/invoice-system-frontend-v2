@@ -72,9 +72,9 @@ const EditClient = (props) => {
         <div className="w-full mt-10">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="space-y-6 border border-gray-800 rounded-lg p-5">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl text-gray-300 font-medium text-center ">
-                    Edit Client Details
-                </h2>
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl text-gray-300 font-medium text-center ">
+                        Edit Client Details
+                    </h2>
                     <div className="text-center border-b pb-5">
                         <label>Client</label>
                         <select 

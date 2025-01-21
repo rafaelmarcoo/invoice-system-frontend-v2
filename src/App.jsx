@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import EditCompanyPage from "./EditCompany/EditCompanyPage";
 import ClientsPage from "./Clients/ClientsPage";
+import InvoicesPage from "./Invoices/InvoicesPage";
 
 function App() {
  return (
@@ -17,6 +18,10 @@ function App() {
         <Route 
           path="/client"
           element={<ClientsPage />}
+        />
+        <Route 
+          path="/invoice"
+          element={<InvoicesPage />}
         />
       </Routes>
       </Router>
