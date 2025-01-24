@@ -3,7 +3,7 @@ import axios from "axios"
 import { GeneratePDF } from "./GeneratePDF";
 import { pdf } from '@react-pdf/renderer';
 
-const InvoiceForm = () => {
+const InvoiceForm = (props) => {
     const [clients, setClients] = useState([]);
     const retrieveClients = async () => {
         try {
@@ -116,6 +116,8 @@ const InvoiceForm = () => {
         const clientInfo = await props.getClientInfo(formData.Name);
         const companyInfo = await props.getCompanyInfo();
         const invoiceInfo = invoiceDetails;
+        
+        
         const emailRequest = {
             To: "testemail437427@gmail.com",
             Subject: `Invoice ${invoiceInfo.name}-${invoiceInfo.id}`,
