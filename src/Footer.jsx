@@ -14,7 +14,8 @@ const Footer = () => {
                         </span> 
                         is developed by
                         <a 
-                            href="https://rafael-manubay.vercel.app/"
+                            target="_blank"
+                            href="https://rafaelmarco-portfolio.vercel.app/"
                             className="bg-gradient-to-r from-blue-300 to-blue-600 bg-clip-text text-transparent hover:text-red-400 transition-colors duration-200">
                             {" "}
                             Rafael Marco Manubay
